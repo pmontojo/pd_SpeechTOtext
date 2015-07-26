@@ -104,7 +104,7 @@ import java.util.Map;
 
 /**
  *
- * @author paulamontojo
+ * @author paulamontojo and diana
  */
 public class runnableClass {
     
