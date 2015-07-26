@@ -53,7 +53,7 @@ import java.util.Map.Entry;
 
 /**
  *
- * @author paulamontojo
+ * @author paulamontojo and diana
  * 
  */
 @WebServlet(name = "FileUploadServlet", urlPatterns = {"/upload"})
