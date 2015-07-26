@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>File Upload</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        
+      <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+        table{
+        display: table;
+        border:black 5px solid;
+        border-collapse: separate;
+        border-spacing: 7px;
+        border-color: gray;
+        padding:2px;
+
+      }
+      
+      #logo{
+          height: 130px;
+          width: 728px;
+      }
+      hr{
+        /*border-color:#357EC7;*/
+        border-color:#B6B6B4;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing messages */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+        color: grey;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      
+      
+      </style>
+      
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+     
+    </head>
+    <body>
+        
+       <div class="container-narrow">
+       <img id = "logo" src="http://opennebula.org/wp-content/uploads/2015/05/IIT_Logo_stack_186_blk.png">
+       </div>
+        <div class="jumbotron"><h2>Upload a video for speech recognition</h2></div>
+        <div class ="container-narrow">
+        <form class = "form-horizontal" role="form" method="POST" action="upload" enctype="multipart/form-data" >
+            
+            
+            <div class="form-group">
+             <label for="destination">Destination</label>
+             <input type="text" value="/Users/paulamontojo/Desktop" name="destination" class = "form-control"/>
+            </div>
+            <div class="form-group">
+             <label for="professor">Professor:</label>
+             <input type="text" value="your name" name="professor" class = "form-control"/>
+            </div>
+            <div class="form-group">
+             <label for="course">Course:</label>
+             <input type="text" value="course name" name="course" class = "form-control"/>
+            </div>
+            <div class="form-group">
+             <label for="file">File:</label>
+             <input type="file" name="file" id="file"/>
+            </div>
+<!--            File:
+            <input type="file" name="file" id="file" /> <br/>-->
+<!--            Destination:
+            <input type="text" value="/Users/paulamontojo/Desktop" name="destination"/>
+            </br>
+            Professor:
+             <input type="text" value="your name" name="professor"/>
+            </br>
+            Course:
+             <input type="text" value="course name" name="course"/>
+            </br>-->
+<button type="submit" class="btn btn-primary btn-lg">Upload</button>
+        </form>
+        </div>
+    </body>
+</html>
