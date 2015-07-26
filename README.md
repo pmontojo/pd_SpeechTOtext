@@ -4,5 +4,5 @@
 
 3.Open both rproject and myStudentUI as maven web projects. 
 
-4. Add dependencies for sphinx
+4.Add dependencies for sphinx
 
